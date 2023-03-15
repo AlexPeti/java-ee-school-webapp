@@ -20,7 +20,7 @@
         <td>${user.id}</td>
         <td>${user.username}</td>
         <td>${user.password}</td>
-        <td><a href="${pageContext.request.contextPath}/schoolapp/static/templates/userdeleted.jsp?id=${user.id}&username=${user.username}&password=${user.password}">Delete</a></td>
+        <td><a href="${pageContext.request.contextPath}/schoolapp/user-delete?id=${user.id}&username=${user.username}&password=${user.password}">Delete</a></td>
         <td><a href="${pageContext.request.contextPath}/schoolapp/static/templates/userupdate.jsp?id=${user.id}&username=${user.username}&password=${user.password}">Update</a></td>
       </tr>
     </c:forEach>
